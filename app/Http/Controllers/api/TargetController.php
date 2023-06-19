@@ -25,7 +25,6 @@ class TargetController extends Controller
             // Get post data for model attributes
             $attributes = $request->validated();
             
-            return json_encode($attributes);
             // Set status
             $attributes['status'] = Target::OPEN_STATUS;
 
